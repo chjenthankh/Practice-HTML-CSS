@@ -11,7 +11,7 @@
 html {
     /* font-size: 100% == 16px*/
     font-size: 62.5%;
-    line-height: 1.6rem; /* 1.6rem of 62.5% = 16px;   */
+    line-height: 1.6rem; /* 1.6rem of 62.5% = 16px; 1rem of 62.5% = 10px  */
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
@@ -27,5 +27,16 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
