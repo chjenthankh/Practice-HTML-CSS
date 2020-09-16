@@ -3,6 +3,7 @@ const registerModal = document.getElementById('registerModal');
 const loginModal = document.getElementById('loginModal');
 const closeLogin = document.getElementById('quitLoginForm');
 const modal = document.getElementById("modal");
+const modalOverlay = modal.querySelector('.modal__overlay');
 const loginBtn = document.getElementById('loginBtn');
 const registerBtn = document.getElementById('registerBtn')
 closeRegister.addEventListener('click', () => modal.style.display = "none");
@@ -16,4 +17,7 @@ registerBtn.addEventListener('click', function(){
     modal.style.display = "flex";
     registerModal.style.display = "block";
     loginModal.style.display = "none";
+})
+modalOverlay.addEventListener('click',function(){
+    modal.style.display = "none";
 })
